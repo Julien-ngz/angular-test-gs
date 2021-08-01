@@ -8,24 +8,71 @@ export interface Product {
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'Poulet',
+    price: 10,
+    description: 'This a description'
   },
   {
     id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    name: 'Travers',
+    price: 7,
+    description: 'This a description'
   },
   {
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
+    name: 'Lamelle',
+    price: 1.5,
+    description: 'This a description'
+  },
+  {
+    id: 4,
+    name: 'Frites',
+    price: 3,
+    description: 'This a description'
+  },
+  {
+    id: 5,
+    name: 'Riz',
+    price: 3,
+    description: 'This a description'
+  },
+  {
+    id: 6,
+    name: 'Salade',
+    price: 3,
+    description: 'This a description'
+  } /* TO REVIEW BIN DATA*/,
+  {
+    id: 2,
+    name: 'Pasteis de nata',
+    price: 7,
+    description: 'This a description'
+  },
+  {
+    id: 3,
+    name: 'Cote de boeuf',
+    price: 1.5,
+    description: 'This a description'
+  },
+  {
+    id: 4,
+    name: 'Pommes de terre',
+    price: 3,
+    description: 'This a description'
+  },
+  {
+    id: 5,
+    name: 'Vin',
+    price: 3,
+    description: 'This a description'
+  },
+  {
+    id: 6,
+    name: 'Canette',
+    price: 3,
+    description: 'This a description'
   }
 ];
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

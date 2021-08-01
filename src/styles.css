@@ -131,8 +131,6 @@ app-top-bar h1 {
 .cart-item,
 .shipping-item {
   width: 100%;
-  min-width: 400px;
-  max-width: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -142,6 +140,71 @@ app-top-bar h1 {
   background-color: #eeeeee;
 }
 
+/* Ordonnancement des boutons produits */
+.products_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 30px;
+  flex-wrap: wrap;
+}
+
+.product-button {
+  border-radius: 2px;
+  font-size: 28px;
+  margin-right: 15px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  height: 80px;
+}
+
+/* Ordonnancement du recap commande*/
+.order_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.container-product_order {
+  display: flex;
+  width: 1400px;
+}
+.container-product {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.container-order {
+  display: flex;
+  flex-direction: column;
+}
+.customer-info {
+  height: 150px;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+#name {
+  width: 200px;
+}
+#phone-number {
+  width: 150px;
+}
+#time {
+  width: 100px;
+}
+#comment {
+  width: 250px;
+}
+
+#send-to-kitchen {
+  width: 240px;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
