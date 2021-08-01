@@ -1,21 +1,21 @@
 <div class="customer-info">
   <h2>Informations du client</h2>
-  <form>
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmitKitchen()">
     <div>
       <label for="name">NOM DU CLIENT</label>
-      <input id="name" type="text" >
+      <input id="name" type="text" formControlName="name">
     </div>
     <div>
-      <label for="phone-number">NUM. DE TEL</label>
-      <input id="phone-number" type="text">
+      <label for="phone_number">NUM. DE TEL</label>
+      <input id="phone_number" type="text" formControlName="phone_number">
     </div>
     <div>
-      <label for="comment">HEURE DE RETRAIT</label>
-      <input id="time" type="time">
+      <label for="time">HEURE DE RETRAIT</label>
+      <input id="time" type="time" formControlName="time">
     </div>
     <div>
       <label for="comment">PRECISION SUR LA COMMANDE</label>
-      <input id="comment" type="text">
+      <input id="comment" type="text" formControlName="comment">
     </div>
     <button class="button" type="submit" id="send-to-kitchen" ><i class="material-icons">send</i>ENVOYER COMMANDE EN CUISINE</button>
   </form>
@@ -31,7 +31,13 @@
       </div>
     </div>
   </div>
-  <app-cart></app-cart>
+  <div class="container-order">
+    <h2>Récapitualtif de la commande:</h2>
+      <div class="cart-item" *ngFor="let item of items"> <!-- TODO mettre une condition pour faire disparaitre le titre OU pour afficher 'Commande VIDE' -->
+        <span>{{ item.name }} </span>
+        <span>{{ item.price | currency:'EUR' }}</span>
+      </div>
+  </div>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
